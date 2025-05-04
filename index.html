@@ -1,165 +1,422 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <link rel="stylesheet" href="css 4/main.css">
-    <title>Mohamed Hazem</title>
+    <title>Hustlz - Streetwear Fashion Hub</title>
+    <link rel="stylesheet" href="css 2/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-
     <header>
-        <a href="#" class="logo">Mohamed Hazem</a>
-        <nav class="navigation">
-            <a href="#services">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <a href="#" class="logo">HUSTLZ</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#mens-collection">Mens</a>
+                <a href="#womens-collection">Womens</a>
+                <a href="#accessories-collection">Accessories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search products...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-results"></div>
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-moon theme-toggle" id="theme-toggle"></i>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>No Luck, Just Hustle</h1>
+            <p>Egypt’s dopest streetwear for the bold & fearless</p>
+            <a href="#mens-collection" class="btn">Shop Now</a>
+        </div>
+    </section>
 
-    <section class="main">
-        <div>
-            <h2>Hello, I'm Mohamed<br><span>SOFTWARE ENGINEERING STUDENT</span></h2>
-            <h3>I'M FRONT-END DEVELOPER</h3>
-            <a href="#projects" class="main-btn">View my work</a>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                
+    <section class="products" id="mens-collection">
+        <div class="products-header">
+            <h2>Mens Collection</h2>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Categories</option>
+                <option value="tees">Tees</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="jackets">Jackets</option>
+                <option value="pants">Pants</option>
+                <option value="shorts">Shorts</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="tees">
+                <img src="Graphic Tee.jpeg" alt="Graphic Tee">
+                <div class="product-info">
+                    <h3>Graphic Tee</h3>
+                    <p>EGP 350</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="hoodies">
+                <img src="Street Hoodie.jpeg" alt="Street Hoodie">
+                <div class="product-info">
+                    <h3>Street Hoodie</h3>
+                    <p>EGP 750</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="jackets">
+                <img src="Denim Jacket.jpeg" alt="Denim Jacket">
+                <div class="product-info">
+                    <h3>Denim Jacket</h3>
+                    <p>EGP 1200</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="pants">
+                <img src="Jogger Pants.jpeg" alt="Jogger Pants">
+                <div class="product-info">
+                    <h3>Jogger Pants</h3>
+                    <p>EGP 650</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="shorts">
+                <img src="Cargo Shorts.jpg" alt="Cargo Shorts">
+                <div class="product-info">
+                    <h3>Cargo Shorts</h3>
+                    <p>EGP 500</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cards" id="services">
-        <h2 class="title">SKILLS</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    
-                </div>
-                <div class="info">
-                    <h3>HTML</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    
-                </div>
-                <div class="info">
-                    <h3>CSS</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        
-                    </div>
-                    <div class="info">
-                        <h3>JAVASCRIPT</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="card">
-                        <div class="icon">
-                            
-                        </div>
-                        <div class="info">
-                            <h3>BOOTSTRAB</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="card">
-                            <div class="icon">
-                                
-                            </div>
-                            <div class="info">
-                                <h3>C++</h3>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="card">
-                                <div class="icon">
-                                    
-                                </div>
-                                <div class="info">
-                                    <h3>C#</h3>
-                                    <p></p>
-                                </div>
-                            </div>
-           
-              
-        
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="15.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category"></p>
-                    <strong class="project-title">
-                        <span>GOLDEN HOTEL WEBSITE</span>
-                        <a href="#" class="more-details"></a>
-                    </strong>
+    <section class="products collection-products" id="womens-collection">
+        <div class="products-header">
+            <h2>Womens Collection</h2>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Categories</option>
+                <option value="tops">Tops</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="dresses">Dresses</option>
+                <option value="pants">Pants</option>
+                <option value="jeans">Jeans</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="tops">
+                <img src="Crop Top.jpg" alt="Crop Top">
+                <div class="product-info">
+                    <h3>Crop Top</h3>
+                    <p>EGP 300</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="14.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category"></p>
-                    <strong class="project-title">
-                        <span>[G.O.A.T]GLOTHING STORE WEBSITE</span>
-                        <a href="#" class="more-details"></a>
-                    </strong>
+            <div class="product-card" data-category="dresses">
+                <img src="Summer Dress.jpeg" alt="Summer Dress">
+                <div class="product-info">
+                    <h3>Summer Dress</h3>
+                    <p>EGP 850</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
                 </div>
             </div>
-        
-    </section>
-
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+20 01015131001</p>
+            <div class="product-card" data-category="hoodies">
+                <img src="Cropped Hoodie.jpg" alt="Cropped Hoodie">
+                <div class="product-info">
+                    <h3>Cropped Hoodie</h3>
+                    <p>EGP 700</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>MH5647771@GMAIL.com</p>
+            <div class="product-card" data-category="pants">
+                <img src="Yoga Pants.jpg" alt="Yoga Pants">
+                <div class="product-info">
+                    <h3>Yoga Pants</h3>
+                    <p>EGP 600</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>MOHAMED Hazem</span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        
-        </div>
-    </footer>
 
+    <section class="products collection-products" id="accessories-collection">
+        <div class="products-header">
+            <h2>Accessories</h2>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Categories</option>
+                <option value="shoes">Shoes</option>
+                <option value="hats">Hats</option>
+                <option value="bags">Bags</option>
+                <option value="wallets">Wallets</option>
+                <option value="sunglasses">Sunglasses</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="shoes">
+                <img src="Urban Sneakers.jpg" alt="Urban Sneakers">
+                <div class="product-info">
+                    <h3>Urban Sneakers</h3>
+                    <p>EGP 1500</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="hats">
+                <img src="Baseball Cap.jpg" alt="Baseball Cap">
+                <div class="product-info">
+                    <h3>Baseball Cap</h3>
+                    <p>EGP 250</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="bags">
+                <img src="Canvas Backpack.jpg" alt="Canvas Backpack">
+                <div class="product-info">
+                    <h3>Canvas Backpack</h3>
+                    <p>EGP 800</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="wallets">
+                <img src="Leather Wallet.jpg" alt="Leather Wallet">
+                <div class="product-info">
+                    <h3>Leather Wallet</h3>
+                    <p>EGP 400</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="sunglasses">
+                <img src="Aviator Sunglasses.jpg" alt="Aviator Sunglasses">
+                <div class="product-info">
+                    <h3>Aviator Sunglasses</h3>
+                    <p>EGP 350</p>
+                    <a href="#" class="btn add-to-cart">Add to Stash</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collections">
+        <div class="collections-header">
+            <h2>Explore Collections</h2>
+        </div>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="mens collection.jpg" alt="Mens Collection">
+                <div class="collection-info">
+                    <h3>Mens Collection</h3>
+                    <a href="#mens-collection" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="women collection.jpg" alt="Womens Collection">
+                <div class="collection-info">
+                    <h3>Womens Collection</h3>
+                    <a href="#womens-collection" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="accessore collection.jpg" alt="Accessories Collection">
+                <div class="collection-info">
+                    <h3>Accessories</h3>
+                    <a href="#accessories-collection" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-header">
+            <h2>About Hustlz</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hustlz is the heartbeat of Egyptian streetwear, born from the vibrant energy of our youth. We're not just a brand; we're a movement. Our designs scream individuality, blending Cairo’s urban grit with global swagger. From tees to kicks, every piece is crafted to make you stand out.</p>
+                <p>No luck, just hustle—join the crew and rep the streets.</p>
+            </div>
+            <div class="about-image">
+                <img src="background.jpg" alt="Hustlz Crew">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p><strong>Email:</strong> crew@hustlz.com</p>
+                <p><strong>Phone:</strong> +20 123 456 7890</p>
+                <p><strong>Address:</strong> 123 Cairo St, Egypt</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout" id="checkout">
+        <div class="checkout-header">
+            <h2>Checkout</h2>
+            <p>No account needed! Just cop your drip and go 🔥</p>
+        </div>
+        <div class="checkout-content">
+            <div class="checkout-form">
+                <h2>Shipping & Payment</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Expiry Date</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvc">CVC</label>
+                        <input type="text" id="card-cvc" name="card-cvc" required>
+                    </div>
+                    <button type="submit" class="btn checkout-btn">Cop Now</button>
+                </form>
+                <a href="#" class="size-chart-btn">View Size Chart</a>
+            </div>
+            <div class="checkout-summary">
+                <h2>Your Stash</h2>
+                <div class="summary-items"></div>
+                <div class="summary-total"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="size-chart-modal" id="size-chart-modal">
+        <div class="size-chart-content">
+            <span class="close-size-chart">&times;</span>
+            <h2>Size Chart</h2>
+            <div class="size-chart-tabs">
+                <button class="tab-btn active" data-tab="mens-size">Mens</button>
+                <button class="tab-btn" data-tab="womens-size">Womens</button>
+                <button class="tab-btn" data-tab="accessories-size">Accessories</button>
+            </div>
+            <div class="size-chart-table" id="mens-size">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest (in)</th>
+                            <th>Waist (in)</th>
+                            <th>Hips (in)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>S</td><td>34-36</td><td>28-30</td><td>34-36</td></tr>
+                        <tr><td>M</td><td>38-40</td><td>32-34</td><td>38-40</td></tr>
+                        <tr><td>L</td><td>42-44</td><td>36-38</td><td>42-44</td></tr>
+                        <tr><td>XL</td><td>46-48</td><td>40-42</td><td>46-48</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="size-chart-table" id="womens-size" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Bust (in)</th>
+                            <th>Waist (in)</th>
+                            <th>Hips (in)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>XS</td><td>30-32</td><td>24-26</td><td>34-36</td></tr>
+                        <tr><td>S</td><td>32-34</td><td>26-28</td><td>36-38</td></tr>
+                        <tr><td>M</td><td>34-36</td><td>28-30</td><td>38-40</td></tr>
+                        <tr><td>L</td><td>36-38</td><td>30-32</td><td>40-42</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="size-chart-table" id="accessories-size" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Size</th>
+                            <th>Dimensions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cap</td><td>One Size</td><td>Adjustable</td></tr>
+                        <tr><td>Backpack</td><td>Standard</td><td>18x12x6 in</td></tr>
+                        <tr><td>Sunglasses</td><td>One Size</td><td>Standard Fit</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="java script/main js/main.js"></script>
 </body>
-<Html>
+</html>
